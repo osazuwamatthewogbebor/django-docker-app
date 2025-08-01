@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A simple Django App Dockerised</title>
+    <link rel="stylesheet" href="{% static 'simpleapp/style.css' %}">
+</head>
+<body>
+    <header class="header">
+        <h1>Simple DJango App</h1>
+        <p>The goal for this project is to dockerise a simple Django app</p>
+    </header>
+    <main class="main">
+        <div class="hero">
+            <img src="{% static 'simpleapp/hero-image.jpg' %}" alt="hero-image" />
+            <div class="hero-text">
+                <h2>Note Worthy</h2>
+                <p>It's all about development, integration and deployment. <br />
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam harum alias ut eaque dolorem dicta fugiat dignissimos, repellendus delectus deleniti doloremque, nemo impedit similique nulla temporibus nihil aut? Delectus, vitae! <br />
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum a rem dolores ratione quasi, quidem obcaecati deleniti atque exercitationem, velit dolore ducimus molestias iure libero adipisci! Iure unde doloribus eius!
+                </p>
+            </div>
+        </div>
+        <div class="image-div">
+            <img class="image-ld" src="{% static 'simpleapp/bg-image.jpg' %}" alt="down image">
+        </div>
+    </main>
+    
+
+    <footer>
+        <p>&copy; Copyright. Made for you</p>
+    </footer>
+</body>
+</html>
